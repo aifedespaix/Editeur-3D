@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Creation de map.</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/design.css">
+	</head>
+	<body>
+	<div id="left">
+		<h2>Ajouter</h2>
+		<select id="ajouterSelect">
+			<option id="Cube">Cube</option>
+			<option id="Boulle">Boulle</option>
+		</select>
+		<h3>Texture</h3>
+		<h3>Geometry</h3>
+		<h3>Material</h3>
+		<h3>Mesh</h3>
+
+		<h2>Paramètres</h2>
+		<h3>Dimensions</h3>
+		x = <input class="small"type="number" id="dimX" value="1">
+		y = <input class="small"type="number" id="dimY" value="1">
+		z = <input class="small"type="number" id="dimZ" value="1">
+		<h3>Position</h3>
+		x = <input class="small"type="number" id="posX" value="1">
+		y = <input class="small"type="number" id="posY" value="1">
+		z = <input class="small"type="number" id="posZ" value="1">
+		<h3>Rotation</h3>
+		x = <input class="small"type="number" id="rotX" value="1">
+		y = <input class="small"type="number" id="rotY" value="1">
+		z = <input class="small"type="number" id="rotZ" value="1">
+		<hr>
+		<button id="animer">Animer</button>
+	</div>
+	<div id="right">
+		<h2>Camera</h2>
+		<h3>Fov</h3>
+		<input class="rangeForm" type="range" min="0" max="10000" step="5">
+		<h3>Aspect</h3>
+		<input class="rangeForm" type="range" min="0" max="10000" step="5">
+		<h3>Near</h3>
+		<input class="rangeForm" type="range" min="0" max="10000" step="5">
+		<h3>Far</h3>
+		<input class="rangeForm" type="range" min="0" max="10000" step="5">
+	</div>
+		<!-- Frameworks -->
+		<script src="js/frameworks/jquery.min.js"></script>
+		<script src="js/frameworks/three.min.js"></script>
+
+		<!-- Editeur -->
+		<script type="text/javascript" src="js/editeur.js"></script>
+
+		<!-- Code -->
+		<script type="text/javascript" src="js/init.js"></script>
+
+	</body>
+</html>
